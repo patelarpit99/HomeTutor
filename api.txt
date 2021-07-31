@@ -1,0 +1,7 @@
+https://geocode.search.hereapi.com/v1/geocode?apikey=_JKSO1-A3gwB5jgeg_dBNaucxr-IPNyvBxorkDPYQ20&q=berlin
+
+
+
+
+
+_JKSO1-A3gwB5jgeg_dBNaucxr-IPNyvBxorkDPYQ20

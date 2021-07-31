@@ -1,0 +1,6 @@
+mysql
+mysql-connector-python
+flask
+flask-mysqldb
+passlib
+flask-WTF
