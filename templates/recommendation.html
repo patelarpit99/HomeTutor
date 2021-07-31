@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+        <div class="container">
+        	<table class="table table-striped">
+        		<thead>
+        			<tr>
+        				<th>S. No</th>
+        				<th>Teacher</th>
+        				<th>Distance (From Low to High)</th>
+        				<th>Show on Map</th>
+        			</tr>
+        		</thead>
+
+        		<tbody>
+					{% for x in range(len) %}
+        			<tr>
+        				<td>{{x+1}}</td>
+    					<td>{{tables[x][0]}}</td>
+    					<td>{{tables[x][1]}} Km</td>
+    					<td>
+    						<a href="https://www.google.com/maps/embed/v1/directions?origin={{tables[x][2][0]}},{{tables[x][2][1]}}&destination={{tables[x][2][2]}},{{tables[x][2][3]}}&key=AIzaSyCU1w23V58B1BGcjZQJHE6K2mtlHjkMJJw" target==_blank>Click Here</a>
+    					</td>
+        			</tr>
+					{%endfor%}
+        		</tbody>
+        	</table>
+        </div>
+
+{% endblock %}

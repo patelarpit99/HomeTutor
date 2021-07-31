@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<style>
+
+	  html,
+	  body,
+	  header,
+	  .view {
+	    height: 100%;
+	  }
+
+	</style>
+
+	<!-- Main navigation -->
+	<header>
+
+	  <!-- Full Page Intro -->
+	  <div class="view deep-purple darken-3">
+	    <!-- Mask & flexbox options-->
+	    <div class="mask">
+	      <!-- Content -->
+	      <div class="container h-100">
+	        <!--Grid row-->
+	        <div class="row align-items-center h-100">
+	          <!--Grid column-->
+	          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+	            <h1 class="white-text mb-4">Join as a <span class="text-warning">Student</h1>
+	            <p class="mb-4 pb-2 white-text">Join to learn at the comfort of your own home or any other preferable location. It also gives you the flexibility to choose your own preferred days and time of tutoring based on tutor’s availability. Learning at the own place leads to better use of study time and help in effective learning. </p>
+	            <a href='/login_student'> <button  type="submit" class="btn btn-outline-white btn-md ml-md-0">Login</button> </a>
+	            <a href='/register_student'><button type="submit" class="btn btn-white btn-md">Register</button></a>
+	          </div>
+	          <!--Grid column-->
+	       
+	          <!--Grid column-->
+	          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.2s">
+	            <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/cards2.png" alt="" class="img-fluid">
+	          </div>
+	          <!--Grid column-->
+	        </div>
+	        <!--Grid row-->
+	      </div>
+	      <!-- Content -->
+	    </div>
+	    <!-- Mask & flexbox options-->
+	  </div>
+	  <!-- Full Page Intro -->
+	  
+	</header>
+	<!-- Main navigation -->
+
+
+
+{% endblock %}
+

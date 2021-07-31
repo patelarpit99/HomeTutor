@@ -1,0 +1,160 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<section class="bg-dark text-light p-5 p-lg-4 pt-lg-5 text-center text-sm-start py-5">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Find the <span class="text-warning">
+                        Home Tutor
+                    </span></h1> 
+                    <p class="lead my-4">
+                        The Home Tutor is a leading online marketplace for quality home tuition and private tutors, connecting teachers, parents and students together. We provide highly qualified home tutors at your door step to work with students of all ages, from Pre-Nursery to intermediate, covering all academic subjects, music and general interest/hobby classes. 
+                    </p>
+                    <h3 class="my-4"><span class="text-warning">Start Enrollment Now</span></h3>
+                    <a href="/student"> <button class="btn btn-primary btn-lg mx-3">Student</button></a>
+                    <a href="/teacher"> <button class="btn btn-primary btn-lg mx-3">Teacher</button></a>
+                </div>
+                <img class="img-fluid w-50 d-none d-md-block" src="static/images/showcase.svg" alt="">
+            </div>
+        </div>
+    </section>	
+
+    <!--Newsletter-->
+
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up for Our Newsletter</h3>
+
+                <div class="input-group news-input">
+                  <input type="text" class="form-control" placeholder="Enter your Email">
+                  <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+      <div style="background-color: #6351ce;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">SMART HOME TUTOR</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>It is a web based free online tutor platform where student can search for specified field or subject related teacher in its own city</p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h5 class="text-uppercase font-weight-bold">Useful links</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="/Home">Home</a>
+            </p>
+            <p>
+              <a href="/student">Join as Student</a>
+            </p>
+            <p>
+              <a href="/teacher">Join as Teacher</a>
+            </p>
+            <p>
+              <a href="/about">About</a>
+            </p><p>
+              <a href="/whyus">Why Us?</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- Links -->
+            <h5 class="text-uppercase font-weight-bold">Contact</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i>Madan Mohan Malaviya University of Technology, Gorakhpur, UP, INDIA</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> admin@smarthometutor.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +91-9451645101</p>
+            <p>
+              <i class="fas fa-print mr-3"></i> +91-9453614319</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+       <!-- Copyright -->
+       <div class="footer-copyright text-center py-3">© 2021 Copyright:
+         <a href="/home"> smarthometutor.com</a>
+       </div>
+       <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+{% endblock %}

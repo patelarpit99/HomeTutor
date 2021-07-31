@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+		
+<!-- 		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">	
+				<div>
+					<h1>Dashboard<small> Welcome {{session.username}}</small></h1>
+					<form method="POST">
+						<button id="find-me" class="btn btn-primary btn-lg mx-3" type="submit">SAVE MY LOCATION</button>
+						<input type="hidden" name="latitude" value={{latitude}}></input>
+						<input type="hidden" name="longitude" value=${longitude}></input>
+					</form>
+				</div>	
+				
+			</div>
+		</div>
+ -->
+
+ <style>
+
+ html,
+ body,
+ header,
+ .view {
+ 	height: 100%;
+ }
+
+</style>
+
+<!-- Main navigation -->
+<header>
+
+	<!-- Full Page Intro -->
+	<div class="view grey lighten-3">
+		<!-- Mask & flexbox options-->
+		<div class="mask">
+			<!-- Content -->
+			<div class="container h-100">
+				<!--Grid row-->
+				<div class="row align-items-center h-100">
+					<!--Grid column-->
+					<div class="col-md-6" data-wow-delay="0.2s">
+						<h1 class="mb-4">Dashboard<span class="text-warning"> Teacher</h1>
+							<p> Welcome {{session.username}} </p>
+							<a href='/snearby_loc'> <button  type="submit" class="btn btn-outline btn-md ml-md-0">Find Student by Location</button> </a>
+							<a href='/profile_teacher'><button type="submit" class="btn btn-outline btn-md">Update Your Profile</button></a>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-md-6">
+							<img src="https://mdbootstrap.com/img/illustrations/hiker-man-colour.svg" alt="" class="img-fluid">
+						</div>
+						<!--Grid column-->
+					</div>
+					<!--Grid row-->
+				</div>
+				<!-- Content -->
+			</div>
+			<!-- Mask & flexbox options-->
+		</div>
+		<!-- Full Page Intro -->
+
+	</header>
+	<!-- Main navigation -->
+	<script>
+
+			navigator.geolocation.getCurrentPosition(success);
+
+			function success(position) {
+				window.latitude  = position.coords.latitude;
+				window.longitude = position.coords.longitude;
+			}
+
+			function alt(){
+				setTimeout(()=>{
+					console.log(window.latitude);
+					$.ajax({
+						url: 'dashboard_teacher',
+						type:'POST',
+						data:{'Latitude':window.latitude, 'Longitude':window.longitude}
+					});
+				}, 6000)
+			}
+			alt()
+		</script>	
+
+
+		
+{% endblock %}
